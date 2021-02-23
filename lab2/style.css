@@ -1,0 +1,39 @@
+* {
+          
+}
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.block1 {
+    width: 35%;
+}
+figure {
+    margin: 0 0 1em 0;
+}
+figure figcaption {
+    text-align: center;
+    margin-top: 1em;
+}
+content {
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+
+/*rozklad*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: center;
+    border: 2px solid black;
+  }
