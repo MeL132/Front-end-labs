@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-size: cover;
+    background: linear-gradient(to right, #E63B17 20%, #9A4D3D 20% 40%, #7B1904 40% 60%, #F67C62 60% 80%, #F6AC9C 80% 100%);
+    padding: 1%;
+}
+.block1 {
+    width: 35%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainInfo h1 {
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul.menu li {
+    display: flex;
+    margin-left: 5px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+.button:hover {
+    background-position: right center;
+}
+
+figure {
+    margin: 0 0 1em 0;
+}
+figure figcaption {
+    text-align: center;
+    margin-top: 1em;
+}
+content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+
+/*rozklad*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: center;
+    border: 2px solid black;
+  }

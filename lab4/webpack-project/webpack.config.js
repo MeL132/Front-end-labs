@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-//const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 
 module.exports = {
@@ -13,27 +13,31 @@ module.exports = {
         filename: '[name].bundle.js',
     },
     plugins: [
-       // new HtmlWebpackPugPlugin(),
+        new HtmlWebpackPugPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'webpack Boilerplate',
-            template: path.resolve(__dirname,'./src/pages/index.html'), // шаблон
+            title: 'index',
+            templates: './src/pages/index.pug', // шаблон
             filename: 'index.html', // название выходного файла
+            minify: false
         }),
         new HtmlWebpackPlugin({
-            title: 'webpack Boilerplate',
-            template: path.resolve(__dirname,'./src/pages/news.html'), 
+            title: 'news',
+            template: path.resolve(__dirname,'./src/pages/news.pug'), 
             filename: 'news.html', 
+            minify: false
         }),
         new HtmlWebpackPlugin({
-            title: 'webpack Boilerplate',
-            template: path.resolve(__dirname,'./src/pages/photo.html'), 
+            title: 'photo',
+            template: path.resolve(__dirname,'./src/pages/photo.pug'), 
             filename: 'photo.html', 
+            minify: false
         }),
         new HtmlWebpackPlugin({
-            title: 'webpack Boilerplate',
-            template: path.resolve(__dirname,'./src/pages/rozklad.html'), 
+            title: 'rozklad',
+            template: path.resolve(__dirname,'./src/pages/rozklad.pug'), 
             filename: 'rozklad.html', 
+            minify: false
         }),
     ],
     devServer: {
